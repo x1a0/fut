@@ -8,8 +8,8 @@ This module implements the fut's basic methods.
 
 """
 
-import requests
 import re
+import requests
 from time import time
 try:
     from cookielib import LWPCookieJar
@@ -86,6 +86,7 @@ def itemParse(item_data):
         'sellerId':          item_data.get('sellerId'),
         'sellerName':        item_data.get('sellerName'),
         'watched':           item_data.get('watched'),
+        'cardsubtypeid':     item_data['itemData'].get('cardsubtypeid'),
     }
 
 '''  # different urls (platforms)
