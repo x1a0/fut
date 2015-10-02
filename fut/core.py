@@ -86,6 +86,7 @@ def itemParse(item_data):
         'sellerId':          item_data.get('sellerId'),
         'sellerName':        item_data.get('sellerName'),
         'watched':           item_data.get('watched'),
+        'coinsProcessed':    item_data.get('coinsProcessed'),
         'cardsubtypeid':     item_data['itemData'].get('cardsubtypeid'),
     }
 
